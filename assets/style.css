@@ -1,0 +1,212 @@
+body {
+    background-color: grey;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+#title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 90px;
+}
+
+#miniDescription {
+    margin-top: 30px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+}
+
+#arrow {
+    width: 50px;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    top: 90%;
+}
+
+#containerOne {
+    background-color: #0d7cde;
+    position: relative;
+}
+
+#miniContainer {
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.containerGeneral {
+    background-color: grey;
+    display: inline-block;
+}
+
+.containerTitle {
+    font-size: 70px;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+.containerInfo {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+/* ref https://johannahperez.github.io/ */
+.parallaxBox {
+    font-family: 'Poppins', sans-serif;
+    border-style: solid;
+    border-width: 7px;
+    border-color: #DCDCDC;
+    padding: 18px;
+    font-size: 55px;
+    letter-spacing: 3px;
+    color: #DCDCDC;
+    text-transform: uppercase;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+}
+
+#parallaxOne {
+    background-image: url("img/sleepingGOOD.jpeg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#parallaxTwo {
+    background-image: url("img/sleepDeprived.jpeg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#parallaxThree {
+    background-image: url("img/Sleep101.png");
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.grids {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.gridContainer {
+    background-color: #AEAEAE;
+    width: 30%;
+    position: relative;
+    height: 300px;
+}
+
+.gridTitle {
+    font-family: 'Poppins', sans-serif;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    padding: 18px;
+    font-size: 21px;
+    letter-spacing: 1px;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+}
+
+.gridPicture {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+
+.gridText {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0;
+    background-color: #E0E0E0;
+    width: 100%;
+    height: 100%;
+}
+
+.gridText div {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.gridContainer:hover {
+    cursor: default;
+}
+
+.gridContainer:hover .gridTitle {
+    opacity: 0.3;
+}
+
+.gridContainer:hover .gridPicture {
+    opacity: 0.8;
+}
+
+.gridContainer:hover .gridText {
+    opacity: 0.8;
+}
+
+.gridContainer .gridTitle {
+    transition: 0.5s;
+}
+
+.gridContainer .gridText, .gridPicture {
+    transition: 1s;
+}
